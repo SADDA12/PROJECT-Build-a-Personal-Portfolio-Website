@@ -1,0 +1,409 @@
+body {
+    background-color: rgb(52, 52, 60);
+}
+
+nav {
+    display: flex;
+    justify-content: center ;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 10px;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 96%;
+    animation: fade-down 0.5s;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+header button {
+    background-color: rgb(3, 3, 37);
+    border-color: white;
+    border-radius: 5em;
+    padding: 5px;
+    border-width: 3px;
+}
+
+main{
+    margin-top: 90px;
+    width: 100%;
+}
+
+/* HOMEPAGE */
+.home-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.dynamic-text {
+    font-size: 26px;
+    color: rgb(3, 145, 177);
+    display: inline-block;
+    border-right: 1px solid white;
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+a {
+    color: #61dafb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* ABOUT ME */
+.sentence {
+    font-size: 25px;
+    color:rgb(3, 145, 177) ;
+}
+
+.aboutMe-write-up{color: white;}
+
+.about-me-details{
+    color: white;
+    font-size: 18px;
+}
+
+/* CONTACT */
+label {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    display: inline-block;
+}
+
+.form-control {margin-bottom: 30px;}
+input{width: 50%;}
+.MessageInput{height: 50px;}
+select {
+    padding: 3px;
+    width: 52%;
+}
+
+.submit-button{
+    padding: 3px;
+    background-color: rgb(3, 145, 177);
+    border-color: white;
+    color: white;
+    border-radius: 8px;
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* PROJECT */
+.project{animation: fade-up 0.5s;}
+
+.project-title{
+    font-size: 23px; 
+    color: rgb(3, 145, 177);
+}
+
+.project img{
+    width: 400px;
+    height: 220px;
+}
+
+.ProjectInfo{color: white;}
+
+.git-button{
+    background-color: black;
+    border-color: white;
+    border-radius: 4px;
+    padding: 6px;
+    width: 150px;
+}
+
+.git-button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SKILLS */
+.slideshow-container {
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+}
+
+.slide {display: none;}
+
+.fade {animation: fade 2s ease-in-out infinite;}
+.skills-title{text-align: center;}
+.skills-main p{font-size: 16px;}
+
+
+
+
+@media screen and (min-width: 426px) and (max-width:768px){
+ /* for tablet: */   
+nav {justify-content: center ;}
+
+header {width: 98%;}
+
+header a {font-size: 20px;}
+
+header button {padding: 12px;}
+
+main{
+    margin-top: 120px;
+    width: 100%;
+}
+
+/* HOMEPAGE */
+.container {text-align: center;}
+
+.home-image {
+    width: 500px;
+    height: 500px;
+}
+
+.subtitle{font-size: 28px;}
+
+.title {font-size: 30px;}
+
+.dynamic-text {font-size: 40px;}
+
+/* ABOUT ME */
+.sentence {font-size: 34px;}
+
+.aboutMe-write-up{font-size: 28px;}
+
+.about-me-details{font-size: 28px;} 
+
+/* CONTACT */
+label {
+    font-size: 26px;
+    width: 240px;
+}
+
+input{
+    width: 60%;
+    height: 40px;
+}
+
+.form-control {margin-bottom: 40px;}
+
+.MessageInput{height: 90px;}
+
+select {
+    width: 61%;
+    height: 40px;
+}
+
+.submit-button{
+    width: 500px;
+    height: 60px;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+/* PROJECTS */
+.project-title{font-size: 40px;}
+
+.project img{
+    width: 700px;
+    height: 370px;
+}
+.ProjectInfo{font-size: 24px;}
+
+.git-button a {font-size: 20px;}
+
+/* SKILLS */
+.skills-main p{font-size: 24px;}
+
+}
+    
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+    /* for large screen */
+
+nav {justify-content: flex-end;}
+
+li {margin-left: 24px;}
+
+header {width: 99%;}
+
+header a {font-size: 22px;}
+
+header button{padding: 9px;}
+
+main{
+    margin-top: 150px;
+    width: 100%;
+}
+
+
+/* HOMEPAGE */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-image {
+    width: 500px;
+    height: 500px;
+}
+
+.title {font-size: 50px;}
+
+.dynamic-text {font-size: 50px;}
+
+.subtitle{font-size: 35px;}
+
+/* ABOUT ME */
+
+.sentence{font-size: 40px;}
+
+.about-me{display: flex;}
+
+.aboutMe-write-up{
+    width: 50%;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.about-me-details{font-size: 28px;}
+
+/* CONTACT */
+label {
+    font-size: 24px;
+    width: 230px;
+    display: inline-block;
+    margin-left: 70px; 
+}
+
+input{
+    width: 60%;
+    padding: 10px;
+}
+
+select {
+    padding: 10px;
+    width: 62%;
+    height: 43px;
+}
+
+
+.submit-button{
+    width: 600px;
+    height: 60px;
+    font-size: 35px;
+    margin-left: 200px;
+}
+
+/* PROJECT */
+.project{
+    display: flex;
+    margin-bottom: 60px;
+    border: solid;
+    background-color: rgb(37, 37, 43);
+    padding-bottom: 10px;
+    border-radius: 6px;
+}
+
+.ProjectInfo{margin-left: 8px;}
+
+.ProjectInfo p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+
+.project img{
+    width: 600px;
+    height: 400px;
+}
+
+.project-title{font-size: 50px;}
+
+.git-button{width: 150px;}
+
+/* SKILLS */
+
+.skills-main p{font-size: 36px;}
+}
+
+
+
+
+
+
+
+/* KEYFRAMES */
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
